@@ -9,7 +9,7 @@ function isInViewport(el) {
     );
 }
 
-const counter = document.querySelector('.parallaxcontact');
+const counter = document.querySelector('.counter');
 
 const counters = document.querySelectorAll('.counter');
 const speed = 200; // The lower the slower
