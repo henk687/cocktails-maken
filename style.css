@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
@@ -7,8 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Indie Flower', cursive;
-    /* font-family: 'Indie Flower', cursive; */
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 html {
@@ -16,9 +12,8 @@ html {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+/*********** Horizontal slider ************/
 
-
-/*********** Progress Bar ************/
 .horizontal-slider {
     display: flex;
     overflow-x: hidden;
@@ -35,6 +30,10 @@ html {
 .horizontal-slider img:last-child {
     padding-right: var(--image-padding);
 }
+
+/*********** End Horizontal slider ************/
+
+/*********** Progress Bar ************/
 
 progress {
     position: fixed;
@@ -62,17 +61,7 @@ progress::-moz-progress-bar {
 
 /*********** End Progress Bar ************/
 
-.between-section {
-    min-height: 15vh;
-}
-
 /*********** Sections ************/
-
-.section {
-    width: 100vw;
-    height: 100vh;
-    border-bottom:1px solid black;
-}
 
 .cards {
     display: flex;
@@ -132,11 +121,6 @@ progress::-moz-progress-bar {
     margin-bottom: 100px;
 }
 
-.parallax {
-    min-height: 100vh;
-    background-color: #333; 
-}
-
 .parallaxinfo {
     min-height: 100vh;
     background-color: #000; 
@@ -177,15 +161,6 @@ progress::-moz-progress-bar {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-.bottle-main__cloud-big {
-    position: absolute;
-    bottom: -12.67%;
-    z-index: 3;
-    left: -49.54%;
-    width: 30.73vw;
-    height: 9.9vw;
 }
 
 .lighthouse {
@@ -395,7 +370,7 @@ progress::-moz-progress-bar {
 
 .anchor {
     position: absolute;
-    bottom: 40px;
+    bottom: 70px;
     right: 37%;
     width: 6vw;
     height: 6vw;
@@ -421,41 +396,6 @@ progress::-moz-progress-bar {
 }
 
 /*********** End Image Animations ************/
-
-/*********** Section Title ************/
-.section-title {
-    position: relative;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.6;
-    margin: 0;
-    font-size: 2.2em;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.section-title::before {
-    position: absolute;
-    content: '';
-    width: 40px;
-    height: 2px;
-    background: #8a2be2;
-    top: 50%;
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
-}
-
-.section-title::after {
-    position: absolute;
-    content: '';
-    width: 40px;
-    height: 2px;
-    background: #8a2be2;
-    top: 50%;
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-}
-/*********** End Section Title ************/
 
 /*********** Intro slider ************/
 .intro {
@@ -841,28 +781,28 @@ section {
     display: flex;
     border-bottom: 1px solid #ccc;
     overflow-y: auto;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
 /* Works on Firefox */
 .cocktails .container .tabs {
     scrollbar-width: thin;
-    scrollbar-color: blue orange;
+    scrollbar-color: #000 #fff;
 }
 
-  /* Works on Chrome, Edge, and Safari */
+/* Works on Chrome, Edge, and Safari */
 .cocktails .container .tabs::-webkit-scrollbar {
     width: 12px;
 }
 
 .cocktails .container .tabs::-webkit-scrollbar-track {
-    background: orange;
+    background: #000;
 }
 
 .cocktails .container .tabs::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: #fff;
     border-radius: 20px;
-    border: 3px solid orange;
+    border: 3px solid #1a1919;
 }
 
 .cocktails .container .tabs button {
@@ -881,16 +821,12 @@ section {
     margin-right: 20px;
 }
 
-.cocktails .container .tabs button:hover .fas {
-    color: #ff7846;
+.cocktails .container .tabs button:hover {
+    color: #ccc;
 }
 
 .active {
-    color: #ff7846;
-}
-
-.cocktails .container .contentactive {
-    color: #ff7846;
+    color: #ccc;
 }
 
 .cocktails .container .tabcontent {
@@ -916,18 +852,6 @@ section {
 
 .content-left p {
     font-size: 18px;
-}
-
-.content-left a {
-    width: auto;
-    display: block;
-    padding: 4px 5px;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: #ff7846;
-    color: #fff;
-    text-align: center;
-    overflow-x: auto;
 }
 
 .content-left ol {
@@ -982,9 +906,6 @@ section {
     transform: translateX(0px);
 }
 
-#btn1 {
-    color: #ff7846;;
-}
 
 @media screen and (max-width: 991px) {
     .cocktails .container .tabcontent {
@@ -1213,18 +1134,7 @@ input.invalid, textarea.invalid {
     height: 4em;
     z-index: 10;
     
-  }
-/* .between-section .header-circle {
-    background: #fff;
 }
-
-.between-section2 .header-circle {
-    background: #000;
-} */
-
-/* header .header-circle { 
-    background: #fff;
-} */
 
 .header-circle1 {
     bottom: 25%;
@@ -1232,64 +1142,75 @@ input.invalid, textarea.invalid {
     -webkit-animation: circle-size 9s linear infinite alternate;
     animation: circle-size 9s linear infinite alternate;
 }
+
 .header-circle2 {
     top: 50%;
     left: 15%;
     -webkit-animation: circle-move 9s linear infinite alternate;
     animation: circle-move 9s linear infinite alternate;
 }
+
 .header-circle3 {
     right: 9%;
     bottom: 7%;
     -webkit-animation: circle-size 6s linear infinite alternate;
     animation: circle-size 6s linear infinite alternate;
 }
+
 .header-circle4 {
     top: 50%;
     right: 35%;
     -webkit-animation: circle-move 6s linear infinite alternate;
     animation: circle-move 6s linear infinite alternate;
 }
+
 .header-circle5 {
     top: 5%;
     -webkit-animation: circle-size 6s linear infinite alternate;
     animation: circle-size 6s linear infinite alternate;
     left: 35%;
 }
+
 .header-circle6 {
     -webkit-animation: circle-size 8s linear infinite alternate;
     animation: circle-size 8s linear infinite alternate;
     top: 35%;
     right: 15%;
 }
+
 .header-circle7 {
     -webkit-animation: circle-size 8s linear infinite alternate;
     animation: circle-size 8s linear infinite alternate;
     left: 50%;
     bottom: 15%;
 }
+
 @-webkit-keyframes circle-size {
     to {
         -webkit-transform: scale(0.5);
                 transform: scale(0.5);
     }
 }
+
 @keyframes circle-size {
     to {
         -webkit-transform: scale(0.5);
                 transform: scale(0.5);
     }
 }
+
 @-webkit-keyframes circle-move {
     to {
         top: 6%;
     }
 }
+
 @keyframes circle-move {
     to {
         top: 6%;
     }
 }
+
 /*********** End Animated circles ************/  
 
 /* Media Query For Desktop */
@@ -1302,6 +1223,9 @@ input.invalid, textarea.invalid {
 
 
 @media screen and (max-width: 1400px) {
+    .cloud4, .cloud5, .cloud6 {
+        display: none;
+    }
     /*********** Contact ************/
     .contact .container {
         width: 90%;
@@ -1323,7 +1247,7 @@ input.invalid, textarea.invalid {
 }
 
 @media screen and (max-width: 991px) {
-    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor, .cloud4, .cloud5, .cloud6 {
+    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor {
         display: none;
     }
 
@@ -1358,40 +1282,24 @@ input.invalid, textarea.invalid {
     /*********** End Contact ************/
 
     .wave {
-        position: absolute;
-        width: 35.5vw;
-        height: 3.5vw;
         bottom: -10px;
-        left: -2vw;
     }
     
     .wave2 {
-        position: absolute;
-        width: 35.5vw;
-        height: 3.5vw;
         bottom: -10px;
-        left: 28.47vw;
     }
     
     .boat-small {
-        position: absolute;
-        width: 14.33vw;
-        height: 14.33vw;
         bottom: 40px;
         left: 15%;
     }
     
     .boat {
-        position: absolute;
-        width: 28.33vw;
-        height: 20.36vw;
         left: 14.33%;
         bottom: 10px;
-        z-index: -1;
     }
     
     .bird {
-        position: absolute;
         width: 8.33vw;
         height: 10.36vw;
         left: 8.22%;
@@ -1399,7 +1307,6 @@ input.invalid, textarea.invalid {
     }
     
     .bird2 {
-        position: absolute;
         width: 8.33vw;
         height: 10.36vw;
         left: 15.22%;
@@ -1407,7 +1314,6 @@ input.invalid, textarea.invalid {
     }
     
     .bird3 {
-        position: absolute;
         width: 12.33vw;
         height: 10.36vw;
         right: 13.22%;
@@ -1415,7 +1321,6 @@ input.invalid, textarea.invalid {
     }
     
     .bird4 {
-        position: absolute;
         width: 12.33vw;
         height: 10.36vw;
         right: 30.22%;
@@ -1423,7 +1328,6 @@ input.invalid, textarea.invalid {
     }
     
     .sun {
-        position: absolute;
         width: 1400px;
         height: 1400px;
         bottom: 25%;
@@ -1432,16 +1336,13 @@ input.invalid, textarea.invalid {
     }
     
     .cloud {
-        position: absolute;
         left: 12.22%;
         bottom: 16%;
         width: 21.71875vw;
         height: 7.6875vw;
-        z-index: -1;
     }
     
     .cloud2 {
-        position: absolute;
         bottom: 17%;
         left: 20.63%;
         width: 12.6vw;
@@ -1449,17 +1350,13 @@ input.invalid, textarea.invalid {
     }
     
     .cloud3 {
-        position: absolute;
         bottom: 18%;
         left: 30.63%;
         width: 16.6vw;
         height: 4.8125vw;
-        z-index: -1;
     }
     
     .cloud-footer {
-        position: absolute;
-        z-index: 3;
         left: 40%;
         bottom: 32%;
         width: 32vw;
@@ -1467,8 +1364,6 @@ input.invalid, textarea.invalid {
     }
     
     .cloud-main {
-        position: absolute;
-        z-index: 3;
         left: 0;
         bottom: -4vw;
         width: 99vw;
@@ -1476,8 +1371,6 @@ input.invalid, textarea.invalid {
     }
     
     .moon {
-        position: absolute;
-        z-index: 3;
         left: 1vw;
         top: 2vw;
         width: 6vw;
@@ -1485,7 +1378,6 @@ input.invalid, textarea.invalid {
     }
     
     .island {
-        position: absolute;
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
