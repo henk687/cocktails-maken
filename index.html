@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico' />
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <script src="mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_gXeV0nUT7NGxVTLulkZvI");
+            })();
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cocktail</title>
+</head>
+<body>
+<progress max="100" value="0"></progress>
+<div class="intro">
+    <div class="intro-text">
+        <h1 class="hide">
+            <span class="text">Tijd</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">Voor een</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">Cocktail</span>
+        </h1>
+    </div>
+</div>
+<div class="slider"></div>
+<section class="main">
+    <div class="header-circle header-circle1">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle2">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle3">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle4">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle5">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle6">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="header-circle header-circle7">
+        <img src="images/star.svg" alt="">
+    </div>
+    <div class="banner-video" id="slide-show">
+        <video src="video/video2.mp4" autoplay muted loop class="active"></video>
+        <video src="video/video7.mp4" autoplay muted loop></video>
+        <video src="video/video4.mp4" autoplay muted loop></video>
+    </div>
+    <div class="container">
+        <header id="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#ontstaan">Ontstaan</a></li>
+                <li><a href="#materialen">Materialen</a></li>
+                <li><a href="#cocktails">Cocktails</a></li>
+                <li><a href="#getallen">Getallen</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <span class="menu-icon" onclick="toggleMenu();"></span>
+        </header>            
+        <ul class="controls">
+            <li onclick="prevSlide();prevSlideText()"><i class="fa fa-angle-left"></i></li>
+            <li onclick="nextSlide();nextSlideText()"><i class="fa fa-angle-right"></i></li>
+        </ul>
+    </div>
+    <div class="section__outer">
+        <div class="section-bg">
+            <div class="moon">
+                <div class="project-trigger">
+                    <img src="images/moon.svg" alt="">
+                </div>
+            </div> 
+            <div class="cloud-main">
+                <div class="project-trigger">
+                    <img src="images/cloud-section.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="parallaxinfo">
+    <section class="info">
+        <div class="container-info">
+            <div class="content">
+                <h1>Hoe is de cocktail ontstaan?</h1>
+                <p>
+                    De oorsprong van de naam ‘cocktail’ ligt in de 18e eeuw. De naam cock-tailed werd toen gebruikt om een niet zuiver raspaard aan te duiden. 
+                    Omdat een cocktail een gemixed drankje is, wat dus niet zuiver is, ging men de naam cocktail al snel gebruiken om deze drankjes te benoemen. 
+                    Het mixen van verschillende drankjes tot een cocktail is al veel ouder: de Bloody Mary cocktail werd bijvoorbeeld al gemaakt rond 1600.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container-cards">
+            <div class="cocktails__item">
+                <div class="cocktails__picture">
+                    <picture>
+                        <img src="images/barmaatje.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="cocktails__label">
+                    <div class="cocktails__title">
+                        Barmaatje
+                    </div>
+                    <div class="cocktails__descr">
+                        Met het barmaatje kan je de verhoudingen van de verschillende dranken bij het bereiden van de cocktail precies meten.
+                    </div>
+                    <div class="cocktails__corner-big">
+                        <img src="images/label-corner-big.svg" alt="">
+                    </div>
+                    <div class="cocktails__corner-small">
+                        <img src="images/label-corner-small.svg" alt="">
+                    </div>
+                </div>
+            </div> 
+            <div class="cocktails__item">
+                <div class="cocktails__picture">
+                    <picture>
+                        <img src="images/shaker.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="cocktails__label">
+                    <div class="cocktails__title">
+                        shaker
+                    </div>
+                    <div class="cocktails__descr">
+                        De shaker is essentieel om de verschillende dranken te mengen. Je hebt twee soorten shakers: de klassieke en de Boston shaker.
+                    </div>
+                    <div class="cocktails__corner-big">
+                        <img src="images/label-corner-big.svg" alt="">
+                    </div>
+                    <div class="cocktails__corner-small">
+                        <img src="images/label-corner-small.svg" alt="">
+                    </div>
+                </div>
+            </div> 
+            <div class="cocktails__item">
+                <div class="cocktails__picture">
+                    <picture>
+                        <img src="images/barzeef.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="cocktails__label">
+                    <div class="cocktails__title">
+                        barzeef
+                    </div>
+                    <div class="cocktails__descr">
+                        De barzeef wordt gebruikt om ingrediënten die niet in het glas mogen komen eruit te zeven, zoals ijsblokjes, pitten van het fruit en dergelijke.
+                    </div>
+                    <div class="cocktails__corner-big">
+                        <img src="images/label-corner-big.svg" alt="">
+                    </div>
+                    <div class="cocktails__corner-small">
+                        <img src="images/label-corner-small.svg" alt="">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <div class="section__outer">
+        <div class="section-bg">
+            <div class="strainer">
+                <div class="project-trigger">
+                    <img class="project-image"  src="images/strainer.svg" alt="">
+                </div>
+            </div>
+            <div class="spoon">
+                <div class="project-trigger">
+                    <img class="project-image"  src="images/spoon.svg" alt="">
+                </div>
+            </div>
+            <div class="shaker">
+                <div class="project-trigger">
+                    <img class="project-image"  src="images/shaker.svg" alt="">
+                </div>
+            </div>
+            <div class="lighthouse">
+                <div class="project-trigger">
+                    <img class="project-text" src="images/lighthouse.svg" alt="">
+                </div>
+            </div>
+            <div class="wave">
+                <div class="project-trigger">
+                    <img class="project-image" src="images/wave.svg" alt="">
+                </div>
+            </div>
+            <div class="wave2">
+                <div class="project-trigger">
+                    <img class="project-image" src="images/wave.svg" alt="">
+                </div>
+            </div>
+            <div class="boat">
+                <div class="project-trigger">
+                    <img class="boat-animation"  src="images/boat.svg" alt="">
+                </div>
+            </div>
+            <div class="bird">
+                <div class="project-trigger">
+                    <img class="project-image"  src="images/bird.svg" alt="">
+                </div>
+            </div>
+            <div class="bird2">
+                <div class="project-trigger">
+                    <img class="project-text"  src="images/bird.svg" alt="">
+                </div>
+            </div>
+            <div class="cloud">
+                <div class="project-trigger">
+                    <img class="project-image" src="images/cloud-small.svg" alt="">
+                </div>
+            </div>
+            <div class="cloud2">
+                <div class="project-trigger">
+                    <img  class="animation-right" src="images/cloud-medium.svg" alt="">
+                </div>    
+            </div>
+            <div class="cloud3">
+                <div class="project-trigger">
+                    <img  class="animation-right" src="images/cloud-big.svg" alt="">
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cocktails" class="cocktails">
+    <div class="container">
+        <div class="tabs">
+            <button tabindex="0" onclick="openTab(event, 'tab1')" class="active"><i class="fas fa-cocktail"></i>Mai Tai</button>
+            <button tabindex="0" onclick="openTab(event, 'tab2')"><i class="fas fa-cocktail"></i>Sex on the beach</button>
+            <button tabindex="0" onclick="openTab(event, 'tab3')"><i class="fas fa-cocktail"></i>Bloody Mary</button>
+            <button tabindex="0" onclick="openTab(event, 'tab4')"><i class="fas fa-cocktail"></i>Pina Colada</button>
+            <button tabindex="0" onclick="openTab(event, 'tab5')"><i class="fas fa-cocktail"></i>Margarita</button>
+        </div>
+        <div class="tabcontent animation-tabs" id="tab1">
+            <div class="content-left">
+                <h1>Mai Tai</h1>
+                <p>
+                    De Mai Tai is een alcoholische cocktail die waarschijnlijk voor het eerst gemaakt werd in het Trader Vic restaurant in Oakland, Californië, 
+                    Verenigde Staten. Dit was in het jaar 1944
+                </p>
+                <h1>ingredi&euml;nten</h1>
+                <ol>
+                    <li>60 ml witte rum</li>
+                    <li>30 ml bruine rum</li>
+                    <li>30 ml Cointreau</li>
+                    <li>15 ml amaretto</li>
+                    <li>5 ml suikersiroop</li>
+                    <li>10 ml citroensap</li>
+                    <li>Munt</li>
+                    <li>Verse Ananas</li>
+                    <li>Ijsblokjes</li>
+                    <li>Crushed ijs</li>
+                </ol>
+                <h1>Zo maak je hem</h1>
+                <ol>
+                    <li>Vul de cocktail met ijsblokjes.</li>
+                    <li>Doe de witte en bruine rum in de shaker.</li>
+                    <li>Voeg ook de amaretto, het citroensap, de suikersiroop en de Cointreau toe.</li>
+                    <li>Schud alles goed door elkaar.</li>
+                    <li>Doe de cocktail, zonder ijsklontjes, in een met crushed ijs gevuld longdrinkglas.</li>
+                    <li>Garneer met een schijfje ananas en wat verse munt.</li>
+                </ol>
+            </div>
+            <div class="content-right">
+                <img src="images/maitai.svg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="tab2">
+            <div class="content-left">
+                <h1>Sex on the beach</h1>
+                <p>
+                    Sex on the Beach is een cocktail die uit sinaasappelsap, cranberrysap en wodka bestaat. 
+                    De drank kan ook afgetopt worden met wat perzik-likeur, dit wordt gedaan voor de bijzonder fruitige tropische smaak. Het behoort dan ook tot de tropische cocktailfamilie.
+                </p>
+                <h1>ingredi&euml;nten</h1>
+                <ol>
+                    <li>30ml vodka</li>
+                    <li>30ml peach likeur</li>
+                    <li>90ml sinaasappelsap</li>
+                    <li>Sinaasappel partje</li>
+                    <li>IJsblokjes</li>
+                </ol>
+                <h1>Zo maak je hem</h1>
+                <ol>
+                    <li>Vul het glas met ijsblokjes.</li>
+                    <li>Doe 30 ml vodka en 30ml peach likeur in het glas of vodka peach of peach schnapps als je het wat makkelijker wilt.</li>
+                    <li> Hierna vul je het glas tot 90% met sinaasappelsap.</li>
+                    <li>Roer nu eventjes kort door en top de cocktail dan af met ca. 30ml cranberry sap.</li>
+                    <li>Hierna niet meer roeren, zo krijg je namelijk een leuk zomers kleur effect. Garneer nu nog met een partje sinaasappel of je hebt toevallig nog een mooi cocktailkersje liggen om op de cocktail te leggen.</li>
+                    <li>Geniet nu maar van die lekkere Sex on the Beach cocktail. Hopelijk drink je hem in een heerlijk zonnetje, denkend aan die ene perfecte vakantiebestemming.</li>
+                </ol>
+            </div>
+            <div class="content-right">
+                <img src="images/sexonthebeach.svg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="tab3">
+            <div class="content-left">
+                <h1>Bloody Mary</h1>
+                <p>
+                    Een bloody mary is een gemixte drank, hoofdzakelijk bestaand uit tomatensap en wodka. Een extra luxe mix bevat ook limoensap. 
+                    Voor de smaak worden vaak nog enkele druppels worcestersaus en tabasco toegevoegd en wat peper. Als 'roerstaaf' wordt vaak een stengel bleekselderij gebruikt.
+                </p>
+                <h1>ingredi&euml;nten</h1>
+                <ol>
+                    <li>45 ml wodka</li>
+                    <li>120 ml tomatensap</li>
+                    <li>15 ml citroensap</li>
+                    <li>4 scheutjes Tabasco</li>
+                    <li>4 scheutjes Worcestershire saus</li>
+                    <li>Peper & zout</li>
+                    <li>1 stengel bleekselderij</li>
+                    <li>IJsblokjes</li>
+                </ol>
+                <h1>Zo maak je hem</h1>
+                <ol>
+                    <li>Vul een longdrink glas met ijsblokjes.</li>
+                    <li>Voeg de wodka en tomatensap toe.</li>
+                    <li>Daarna voeg je de verse citroensap, Tabasco, Worcestershire saus, een snufje zout en gemalen peper toe.</li>
+                    <li>Roer en garneer met een stengel selderij en eventueel een schijfje citroen. De stengel selderij kun je gebruiken om tussendoor nog even in je cocktail te roeren. </li>
+                </ol>
+                </p>
+            </div>
+            <div class="content-right">
+                <img src="images/bloodymary.svg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="tab4">
+            <div class="content-left">
+                <h1>Pina Colada</h1>
+                <p>
+                    De pina colada is de tropische cocktail. “Pina” betekent in het Spaans ananas en “colada” gezeefd. 
+                    Met een pina colada waan je je op witte stranden onder palmbomen met als uitzicht een blauwe zee.
+                </p>
+                <h1>ingredi&euml;nten</h1>
+                <ol>
+                    <li>30ml witte rum</li>
+                    <li>20ml kokosmelk</li>
+                    <li>60ml ananassap</li>
+                    <li>1 ananas chunk</li>
+                    <li>1 cocktailkersje</li>
+                    <li>IJsblokjes</li>
+                </ol>
+                <h1>Zo maak je hem</h1>
+                <ol>
+                    <li>Vul de shaker met 1/3 ijsblokjes.</li>
+                    <li>Voeg 30ml van je favoriete witte rum, 20 ml kokosmelk en 60ml ananassap in de shaker.</li>
+                    <li>Schudt de shaker nu stevig door totdat er een frostlaagje op de shaker ontstaat.</li>
+                    <li>Proef even met een rietje of de cocktail goed op smaak is. Als er nog iets mist, is dit het moment om je cocktail perfect te maken.</li>
+                    <li>Schenk nu de inhoud van de shaker in het glas. Het ijs kun je mee uitschenken.</li>
+                    <li>De Pina Colada is een tropische cocktail dus zorg er ook voor dat hij er zo uit ziet! Garneer het glas door middel van bijvoorbeeld een mooi rood cocktailkersje, zomers parasolletje of leuk rietje.</li>
+                    <li>Geniet nu lekker van deze zoete tropische cocktail. Proef de heerlijke warme zon, de koele zee en het zwoele strand in deze heerlijke cocktail!</li>
+                </ol>
+            </div>
+            <div class="content-right">
+                <img src="images/pinacolada.svg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="tab5">
+            <div class="content-left">
+                <h1>Margarita</h1>
+                <p>
+                    Een margarita is een Mexicaanse cocktail die behoort tot de shortdrinks.
+                    Het is niet duidelijk wie het recept oorspronkelijk heeft bedacht, maar het zou bedoeld kunnen zijn als een nettere manier om tequila te drinken.
+                </p>
+                <h1>ingredi&euml;nten</h1>
+                <ol>
+                    <li>45 ml tequila blanco</li>
+                    <li>30 ml Cointreau</li>
+                    <li>30 ml limoensap</li>
+                    <li>5 ml suikersiroop </li>
+                    <li>grof zeezout </li>
+                    <li>limoen</li>
+                </ol>
+                <h1>Zo maak je hem</h1>
+                <ol>
+                    <li>Schenk in de shaker 45ml Tequila, 20 ml Triple Sec en pers circa anderhalve limoen uit. LET OP! Hou twee mooie limoenschijfjes over voor de garnering.</li>
+                    <li>Doe de dop op de shaker en schud stevig tot je een frostlaagje krijgt op de shaker.</li>
+                    <li>Proef even of de Margarita goed op smaak is. Als dit het geval is schenk je hem uit zonder het ijs.</li>
+                    <li>Als kers op de taart, garneer je het glas met een mooi schijfje limoen op de rand.</li>
+                    <li>TGa relaxed onderuit zitten, zet je zonnebril op en geniet!</li>
+                </ol>        
+            </div>
+            <div class="content-right">
+                <img src="images/margarita.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="horizontal-slider">
+    <img src="images/cocktail1.jpg">
+    <img src="images/cocktail2.jpg">
+    <img src="images/cocktail3.jpg">
+    <img src="images/cocktail4.jpg">
+</div>
+
+<section class="parallaxcontact">
+
+    <section id="getallen" class="counters">
+        <div class="counter-container">
+            <div class="square">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="content">
+                    <i class="fas fa-cocktail fa-4x"></i>
+                    <div class="counter" data-target="1600">0</div>
+                    <h3>Jaar van de eerste cocktail</h3>
+                </div>
+            </div>
+            <div class="square">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="content">
+                    <i class="fas fa-lightbulb fa-4x"></i>
+                    <div class="counter" data-target="1860">0</div>
+                    <h3>Jaar van de uitvinding van de shaker</h3>
+                </div>
+            </div>
+            <div class="square">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="content">
+                    <i class="fas fa-clipboard-list fa-4x"></i>
+                    <div class="counter" data-target="750">0</div>
+                    <h3>Er zijn meer dan 750 cocktail recepten</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contactForm">
+                <div class="formBox">
+                    <form action="">
+                        <h2>Contact</h2>
+                        <div class="inputBox w100">
+                            <input type="text" name="name" id="name" placeholder="Naam">
+                            <div class="error-hint hidden">Dit veld is verplicht</div>
+                        </div>
+                    
+                        <div class="inputBox w100">
+                            <input type="text" name="email" id="email" placeholder="Email Adres">
+                            <div class="error-hint hidden">Email is ongeldig</div>
+                        </div>
+                    
+                        <div class="inputBox w100">
+                            <input type="text" name="phone" id="phone" placeholder="Telefoonnummer">
+                            <div class="error-hint hidden">Telefoonnummer is ongeldig</div>
+                        </div>
+                    
+                        <div class="inputBox w100">
+                            <textarea name="message" id="message" placeholder="Schrijf hier je vraag of boodschap"></textarea>
+                            <div class="error-hint hidden">Dit veld is verplicht</div>
+                        </div>
+                        <button >Verzenden</button>   
+                    </form>
+    
+                    <div class="thank-you hidden">
+                        Bedankt voor je bericht
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright">
+        <p>&copy; 
+            <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+            </script> 
+                Cocktails maken
+        </p>
+    </section>
+
+    <div class="section__outer">
+        <div class="section-bg">
+            <div class="cloud4">
+                <div class="project-trigger">
+                    <img class="project-image" src="images/cloud-small.svg" alt="">
+                </div>
+            </div>
+            <div class="cloud5">
+                <div class="project-trigger">
+                    <img class="animation-right" src="images/cloud-medium.svg" alt="">
+                </div>
+            </div>
+            <div class="cloud6">
+                <div class="project-trigger">
+                    <img class="animation-right" src="images/cloud-big1.svg" alt="">
+                </div>
+            </div>
+            <div class="sun">
+                <div class="project-trigger">
+                    <img class="sun-animation" src="images/sun.svg" alt="">
+                </div>
+            </div>
+            <div class="cloud-footer">
+                <div class="project-trigger">
+                    <img class="animation-right"  src="images/cloud-big.svg" alt="">
+                </div>
+            </div>
+            <div class="island">
+                <div class="project-trigger">
+                    <img class="island-animation" src="images/island.svg" alt="">
+                </div>    
+            </div>
+            <div class="anchor">
+                <div class="project-trigger">
+                    <img class="anchor-animation" src="images/anchor.svg" alt="">
+                </div>    
+            </div>
+            <div class="dolphin">
+                <div class="project-trigger">
+                    <img class="dolphin-animation" src="images/dolphin.svg" alt="">
+                </div>    
+            </div>
+            <div class="dolphin2">
+                <div class="project-trigger">
+                    <img class="dolphin2-animation" src="images/dolphin2.svg" alt="">
+                </div>    
+            </div>
+            <div class="boat-small">
+                <div class="project-trigger">
+                    <img class="island-animation" src="images/boat-small.svg" alt="">
+                </div>
+            </div>
+            <div class="bird3">
+                <div class="project-trigger">
+                    <img class="project-image"  src="images/bird-black.svg" alt="">
+                </div>
+            </div>
+            <div class="bird4">
+                <div class="project-trigger">
+                    <img class="project-text"  src="images/bird-black.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+<script src="animation.js"></script>
+    
+</body>
+</html>
