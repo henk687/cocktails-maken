@@ -99,6 +99,7 @@ projectTriggers.forEach(addTimeline);
 
 function addTimeline(project, index) {
     const text = project.querySelector(".project-text"),
+    fade = project.querySelector(".fade"),
     image = project.querySelector(".project-image"),
     right = project.querySelector(".animation-right"),
     boat = project.querySelector(".boat-animation");
@@ -139,6 +140,11 @@ function addTimeline(project, index) {
     duration: 0.5,
     // stagger: 0.2
   })
+  timeline.from(fade, {
+    opacity: 0,
+    duration: 1,
+    // stagger: 0.2
+  }, 0 )
   timeline.from(right, {
     x: 200,
     // opacity: 0,

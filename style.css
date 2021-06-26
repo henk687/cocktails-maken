@@ -359,6 +359,51 @@ progress::-moz-progress-bar {
     height: 6vw;
 }
 
+.moon2 {
+    position: absolute;
+    z-index: 3;
+    right: 4vw;
+    bottom: 24%;
+    width: 6vw;
+    height: 6vw;
+}
+
+.star {
+    position: absolute;
+    z-index: 3;
+    right: 16vw;
+    bottom: 24%;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.star2 {
+    position: absolute;
+    z-index: 3;
+    right: 48vw;
+    bottom: 22%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.star3 {
+    position: absolute;
+    z-index: 3;
+    right: 10vw;
+    bottom: 22%;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.star4 {
+    position: absolute;
+    z-index: 3;
+    left: 12vw;
+    bottom: 23%;
+    width: 3vw;
+    height: 3vw;
+}
+
 .island {
     position: absolute;
     bottom: 30px;
@@ -1303,14 +1348,14 @@ input.invalid, textarea.invalid {
         width: 8.33vw;
         height: 10.36vw;
         left: 8.22%;
-        bottom: 11%;
+        bottom: 8%;
     }
     
     .bird2 {
         width: 8.33vw;
         height: 10.36vw;
         left: 15.22%;
-        bottom: 9%;
+        bottom: 6%;
     }
     
     .bird3 {
@@ -1337,20 +1382,20 @@ input.invalid, textarea.invalid {
     
     .cloud {
         left: 12.22%;
-        bottom: 16%;
+        bottom: 11%;
         width: 21.71875vw;
         height: 7.6875vw;
     }
     
     .cloud2 {
-        bottom: 17%;
+        bottom: 11.5%;
         left: 20.63%;
         width: 12.6vw;
         height: 2.8125vw;
     }
     
     .cloud3 {
-        bottom: 18%;
+        bottom: 13%;
         left: 30.63%;
         width: 16.6vw;
         height: 4.8125vw;
@@ -1375,6 +1420,31 @@ input.invalid, textarea.invalid {
         top: 2vw;
         width: 6vw;
         height: 6vw;
+    }
+
+    .moon2 {
+        right: 4vw;
+        bottom: 19%;
+    }
+    
+    .star {
+        right: 16vw;
+        bottom: 19%;
+    }
+    
+    .star2 {
+        right: 48vw;
+        bottom: 17%;
+    }
+    
+    .star3 {
+        right: 10vw;
+        bottom: 17%;
+    }
+    
+    .star4 {
+        left: 12vw;
+        bottom: 18%;
     }
     
     .island {
