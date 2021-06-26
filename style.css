@@ -1067,10 +1067,10 @@ section {
 
 /*********** Section Contact ************/
 
-.contact .container {
+.sun .container {
     position: absolute;
     left: 50%;
-    top: 24%;
+    bottom: 40%;
     transform: translateX(-50%);
     min-width: 700px;
     min-height: 550px;
@@ -1078,7 +1078,7 @@ section {
     margin: 0 auto;
 }
 
-.contact .container .contactForm {
+.sun .container .contactForm {
     position: absolute;
     padding: 0px 50px;
     width: 100%;
@@ -1086,14 +1086,14 @@ section {
     opacity: 1;
 }
 
-.contact .container .contactForm h2 {
+.sun .container .contactForm h2 {
     color: #fff;
     font-size: 34px;
     font-weight: 500;
     
 }
 
-.contact .container .contactForm .formBox {
+.sun .container .contactForm .formBox {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1101,14 +1101,14 @@ section {
     padding-top: 30px;
 }
 
-.contact .container .contactForm .formBox form .inputBox {
+.sun .container .contactForm .formBox form .inputBox {
     position: relative;
     margin-bottom: 35px;
     width: 100%;
 }
 
-.contact .container .contactForm .formBox form .inputBox input,
-.contact .container .contactForm .formBox form .inputBox textarea {
+.sun .container .contactForm .formBox form .inputBox input,
+.sun .container .contactForm .formBox form .inputBox textarea {
     width: 100%;
     resize: none;
     padding: 5px 0;
@@ -1121,11 +1121,11 @@ section {
     border-bottom: 1px solid #fff;
 }
 
-.contact .container .contactForm .formBox form .inputBox textarea {
+.sun .container .contactForm .formBox form .inputBox textarea {
     height: 120px;
 }
 
-.contact .container .contactForm .formBox form button {
+.sun .container .contactForm .formBox form button {
     position: relative;
     cursor: pointer;
     background: #fff;
@@ -1136,7 +1136,7 @@ section {
     font-size: 25px;
 }
 
-.contact .container .contactForm .formBox form button:hover {
+.sun .container .contactForm .formBox form button:hover {
     background: rgb(127, 255, 212, 1);
     color: #333;
 }
@@ -1272,12 +1272,11 @@ input.invalid, textarea.invalid {
         display: none;
     }
     /*********** Contact ************/
-    .contact .container {
+    /* .contact .container {
         width: 90%;
         min-width: auto;
         margin: 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    top: 0;
     }
 
     .contact .container .contactForm {
@@ -1287,7 +1286,7 @@ input.invalid, textarea.invalid {
         margin: 0 auto;
         padding: 40px;
         height: 550px;
-    }
+    } */
     /*********** End Contact ************/
 }
 
@@ -1314,7 +1313,7 @@ input.invalid, textarea.invalid {
         padding: 100px 0;
     }
     /*********** Contact ************/
-    .contact .container {
+    /* .contact .container {
         display: flex;
         flex-direction: column;
     }
@@ -1322,7 +1321,7 @@ input.invalid, textarea.invalid {
     .contact .container .contactForm {
         width: 100%;
         height: auto;
-    }
+    } */
 
     /*********** End Contact ************/
 
@@ -1375,7 +1374,7 @@ input.invalid, textarea.invalid {
     .sun {
         width: 1400px;
         height: 1400px;
-        bottom: 25%;
+        bottom: 20%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1456,10 +1455,18 @@ input.invalid, textarea.invalid {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     /*********** Contact ************/
-    .contact .container .contactForm {
+    /* .contact .container .contactForm {
         padding: 25px;
-    }
+    } */
     /*********** End Contact ************/
+
+    .sun {
+        width: 1400px;
+        height: 1400px;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
