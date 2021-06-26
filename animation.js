@@ -146,7 +146,7 @@ function addTimeline(project, index) {
     // stagger: 0.2
   }, 0 )
   timeline.from(right, {
-    x: 200,
+    x: 400,
     // opacity: 0,
     duration: 0.5,
     // stagger: 0.2
@@ -157,7 +157,7 @@ timeline.from(sun, {
     // stagger: 0.2
 }, 0 )
 timeline.from(image, {
-    x: -200,
+    x: -300,
     // opacity: 0,
     duration: 0.5
 }, 0 )
