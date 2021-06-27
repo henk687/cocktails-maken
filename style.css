@@ -799,7 +799,7 @@ section {
 
 .cocktails__corner-small {
     position: absolute;
-    right: 0;
+    right: -1;
     bottom: -9px;
 }
 
