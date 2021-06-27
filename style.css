@@ -81,7 +81,7 @@ progress::-moz-progress-bar {
     align-items: center;
     flex-direction: column;
     padding: 100px 0;
-    margin: 100px 0 300px 0;
+    margin: 100px 0 0 0;
     z-index: 2;
     overflow: hidden;
 }
@@ -90,9 +90,8 @@ progress::-moz-progress-bar {
     display: flex;
     position: relative;
     flex-direction: column;
-    min-height: 150vh;
-    padding: 100px 0;
-    margin-top: 500px;
+    /* padding: 100px 0; */
+    margin-top: 100px;
     z-index: 2;
 }
 
@@ -102,7 +101,7 @@ progress::-moz-progress-bar {
     align-items: center;
     height: 50px;
     width: 100%;
-    margin-top: 65vh;
+    margin-top: 170vh;
     font-size: 25px;
     z-index: 2;
     color: #fff;
@@ -266,11 +265,10 @@ progress::-moz-progress-bar {
 
 .sun {
     position: absolute;
-    width: 1400px;
-    height: 1400px;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 30vw;
+    height: 30vw;
+    bottom: 30%;
+    left: 10%;
 }
 
 .cloud {
@@ -302,7 +300,7 @@ progress::-moz-progress-bar {
 .cloud4 {
     position: absolute;
     left: 30.79%;
-    top: 19.27%;
+    bottom: 19.27%;
     width: 12.8125vw;
     height: 4.7vw;
 }
@@ -310,14 +308,14 @@ progress::-moz-progress-bar {
 .cloud5 {
     position: absolute;
     left: 24.79%;
-    top: 24.27%;
+    bottom: 24.27%;
     width: 12.8125vw;
     height: 4.7vw;
 }
 
 .cloud6 {
     position: absolute;
-    top: 30.66%;
+    bottom: 30.66%;
     right: 3.072%;
     width: 25.6vw;
     height: 5.8125vw;
@@ -799,7 +797,7 @@ section {
 
 .cocktails__corner-small {
     position: absolute;
-    right: -1;
+    right: -1px;
     bottom: -9px;
 }
 
@@ -1067,33 +1065,32 @@ section {
 
 /*********** Section Contact ************/
 
-.sun .container {
-    position: absolute;
+.contact .container {
+    /* position: absolute;
     left: 50%;
     bottom: 40%;
-    transform: translateX(-50%);
-    min-width: 700px;
+    transform: translateX(-50%); */
+    max-width: 700px;
     min-height: 550px;
     display: flex;
     margin: 0 auto;
 }
 
-.sun .container .contactForm {
-    position: absolute;
+.contact .container .contactForm {
     padding: 0px 50px;
     width: 100%;
     height: 100%;
     opacity: 1;
 }
 
-.sun .container .contactForm h2 {
-    color: #fff;
+.contact .container .contactForm h2 {
+    color: #000;
     font-size: 34px;
     font-weight: 500;
     
 }
 
-.sun .container .contactForm .formBox {
+.contact .container .contactForm .formBox {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1101,42 +1098,42 @@ section {
     padding-top: 30px;
 }
 
-.sun .container .contactForm .formBox form .inputBox {
+.contact .container .contactForm .formBox form .inputBox {
     position: relative;
     margin-bottom: 35px;
     width: 100%;
 }
 
-.sun .container .contactForm .formBox form .inputBox input,
-.sun .container .contactForm .formBox form .inputBox textarea {
+.contact .container .contactForm .formBox form .inputBox input,
+.contact .container .contactForm .formBox form .inputBox textarea {
     width: 100%;
     resize: none;
     padding: 5px 0;
     font-size: 25px;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     border: none;
     outline: none;
     background-color: transparent;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
-.sun .container .contactForm .formBox form .inputBox textarea {
+.contact .container .contactForm .formBox form .inputBox textarea {
     height: 120px;
 }
 
-.sun .container .contactForm .formBox form button {
+.contact .container .contactForm .formBox form button {
     position: relative;
     cursor: pointer;
-    background: #fff;
-    color: #000;
+    background: #000;
+    color: #fff;
     border: none;
     max-width: 250px;
     padding: 12px;
     font-size: 25px;
 }
 
-.sun .container .contactForm .formBox form button:hover {
+.contact .container .contactForm .formBox form button:hover {
     background: rgb(127, 255, 212, 1);
     color: #333;
 }
@@ -1271,6 +1268,15 @@ input.invalid, textarea.invalid {
     .cloud4, .cloud5, .cloud6 {
         display: none;
     }
+
+    /* .sun {
+        position: absolute;
+        width: calc(100% - 100px);
+        height: 1400px;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    } */
     /*********** Contact ************/
     /* .contact .container {
         width: 90%;
@@ -1361,22 +1367,14 @@ input.invalid, textarea.invalid {
         width: 12.33vw;
         height: 10.36vw;
         right: 13.22%;
-        bottom: 16%;
+        bottom: 12%;
     }
     
     .bird4 {
         width: 12.33vw;
         height: 10.36vw;
         right: 30.22%;
-        bottom: 14%;
-    }
-    
-    .sun {
-        width: 1400px;
-        height: 1400px;
-        bottom: 20%;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 10%;
     }
     
     .cloud {
@@ -1462,11 +1460,11 @@ input.invalid, textarea.invalid {
     } */
     /*********** End Contact ************/
 
-    .sun {
-        width: 1400px;
-        height: 1400px;
-        bottom: 15%;
-        left: 50%;
-        transform: translateX(-50%);
+    .wave {
+        bottom: -6px;
+    }
+    
+    .wave2 {
+        bottom: -6px;
     }
 }

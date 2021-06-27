@@ -94,3 +94,4 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.transform = "translateX(0)";
     document.getElementById(tabName).style.transitionDelay = "0.3s";
 };
+
