@@ -794,13 +794,13 @@ section {
 .cocktails__corner-big {
     position: absolute;
     left: -12px;
-    bottom: -8px;
+    bottom: -9px;
 }
 
 .cocktails__corner-small {
     position: absolute;
     right: 0;
-    bottom: -8px;
+    bottom: -9px;
 }
 
 
@@ -812,11 +812,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 130vh;
+    min-height: 1200px;
 }
 .cocktails .container {
     width: 100vw;
-    min-height: 130vh;
+    min-height: 1200px;
     padding: 10vh 0;
     position: relative;
     overflow: hidden;
