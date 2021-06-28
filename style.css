@@ -101,7 +101,7 @@ progress::-moz-progress-bar {
     align-items: center;
     height: 50px;
     width: 100%;
-    margin-top: 170vh;
+    margin-top: 210vh;
     font-size: 25px;
     z-index: 2;
     color: #fff;
@@ -267,7 +267,7 @@ progress::-moz-progress-bar {
     position: absolute;
     width: 30vw;
     height: 30vw;
-    bottom: 30%;
+    bottom: 35%;
     left: 10%;
 }
 
@@ -299,35 +299,27 @@ progress::-moz-progress-bar {
 
 .cloud4 {
     position: absolute;
-    left: 30.79%;
-    bottom: 19.27%;
+    left: 33.79%;
+    bottom: 32.27%;
     width: 12.8125vw;
     height: 4.7vw;
+    z-index: 2;
 }
 
 .cloud5 {
     position: absolute;
-    left: 24.79%;
-    bottom: 24.27%;
+    left: 22.79%;
+    bottom: 28.27%;
     width: 12.8125vw;
     height: 4.7vw;
 }
 
 .cloud6 {
     position: absolute;
-    bottom: 30.66%;
+    bottom: 43.66%;
     right: 3.072%;
     width: 25.6vw;
     height: 5.8125vw;
-}
-
-.cloud-footer {
-    position: absolute;
-    z-index: 3;
-    left: 40%;
-    bottom: 32%;
-    width: 32vw;
-    height: 9.9vw;
 }
 
 .cloud-main {
@@ -1265,9 +1257,9 @@ input.invalid, textarea.invalid {
 
 
 @media screen and (max-width: 1400px) {
-    .cloud4, .cloud5, .cloud6 {
+    /* .cloud4, .cloud5, .cloud6 {
         display: none;
-    }
+    } */
 
     /* .sun {
         position: absolute;
@@ -1397,12 +1389,30 @@ input.invalid, textarea.invalid {
         width: 16.6vw;
         height: 4.8125vw;
     }
+
+    .cloud4 {
+        position: absolute;
+        left: 33.79%;
+        bottom: 32.27%;
+        width: 22.8125vw;
+        height: 4.7vw;
+        z-index: 2;
+    }
     
-    .cloud-footer {
-        left: 40%;
-        bottom: 32%;
-        width: 32vw;
-        height: 9.9vw;
+    .cloud5 {
+        position: absolute;
+        left: 22.79%;
+        bottom: 28.27%;
+        width: 22.8125vw;
+        height: 4.7vw;
+    }
+    
+    .cloud6 {
+        position: absolute;
+        bottom: 23.66%;
+        right: 3.072%;
+        width: 25.6vw;
+        height: 5.8125vw;
     }
     
     .cloud-main {
