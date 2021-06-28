@@ -93,7 +93,7 @@ gsap.from('.animation-contactform', {
 });
 
 //top animation
-const projectTriggers = document.querySelectorAll(".project-trigger");
+const projectTriggers = document.querySelectorAll(".parallax-trigger");
 
 projectTriggers.forEach(addTimeline);
 

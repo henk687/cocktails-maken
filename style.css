@@ -47,7 +47,7 @@ progress {
     background: transparent;
     z-index: 3;
 }
-  progress::-webkit-progress-bar {
+progress::-webkit-progress-bar {
     background: transparent;
 }
 progress::-webkit-progress-value {
@@ -90,7 +90,6 @@ progress::-moz-progress-bar {
     display: flex;
     position: relative;
     flex-direction: column;
-    /* padding: 100px 0; */
     margin-top: 100px;
     z-index: 2;
 }
@@ -135,7 +134,7 @@ progress::-moz-progress-bar {
 
 /*********** Image Animations ************/
 
-.section__outer {
+.parallax-outer {
     position: absolute;
     top: 0;
     left: 0;
@@ -146,15 +145,15 @@ progress::-moz-progress-bar {
     overflow: hidden;
 }
 
-.section-bg {
+.parallax-bg {
     height: 100%;
 }
 
-.project-trigger {
+.parallax-trigger {
     flex:1;
 }
 
-.project-trigger img, .project-trigger svg{
+.parallax-trigger img, .parallax-trigger svg{
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -430,6 +429,161 @@ progress::-moz-progress-bar {
     transform: rotate(20deg);
 }
 
+@media screen and (max-width: 991px) {
+    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor {
+        display: none;
+    }
+
+    .wave {
+        bottom: -10px;
+    }
+    
+    .wave2 {
+        bottom: -10px;
+    }
+    
+    .boat-small {
+        bottom: 40px;
+        left: 15%;
+    }
+    
+    .boat {
+        left: 14.33%;
+        bottom: 10px;
+    }
+    
+    .bird {
+        width: 8.33vw;
+        height: 10.36vw;
+        left: 8.22%;
+        bottom: 8%;
+    }
+    
+    .bird2 {
+        width: 8.33vw;
+        height: 10.36vw;
+        left: 15.22%;
+        bottom: 6%;
+    }
+    
+    .bird3 {
+        width: 12.33vw;
+        height: 10.36vw;
+        right: 13.22%;
+        bottom: 12%;
+    }
+    
+    .bird4 {
+        width: 12.33vw;
+        height: 10.36vw;
+        right: 30.22%;
+        bottom: 10%;
+    }
+    
+    .cloud {
+        left: 12.22%;
+        bottom: 11%;
+        width: 21.71875vw;
+        height: 7.6875vw;
+    }
+    
+    .cloud2 {
+        bottom: 11.5%;
+        left: 20.63%;
+        width: 12.6vw;
+        height: 2.8125vw;
+    }
+    
+    .cloud3 {
+        bottom: 13%;
+        left: 30.63%;
+        width: 16.6vw;
+        height: 4.8125vw;
+    }
+
+    .cloud4 {
+        position: absolute;
+        left: 33.79%;
+        bottom: 32.27%;
+        width: 22.8125vw;
+        height: 4.7vw;
+        z-index: 2;
+    }
+    
+    .cloud5 {
+        position: absolute;
+        left: 22.79%;
+        bottom: 28.27%;
+        width: 22.8125vw;
+        height: 4.7vw;
+    }
+    
+    .cloud6 {
+        position: absolute;
+        bottom: 23.66%;
+        right: 3.072%;
+        width: 25.6vw;
+        height: 5.8125vw;
+    }
+    
+    .cloud-main {
+        left: 0;
+        bottom: -4vw;
+        width: 99vw;
+        height: 9.9vw;
+    }
+    
+    .moon {
+        left: 1vw;
+        top: 2vw;
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .moon2 {
+        right: 4vw;
+        bottom: 19%;
+    }
+    
+    .star {
+        right: 16vw;
+        bottom: 19%;
+    }
+    
+    .star2 {
+        right: 48vw;
+        bottom: 17%;
+    }
+    
+    .star3 {
+        right: 10vw;
+        bottom: 17%;
+    }
+    
+    .star4 {
+        left: 12vw;
+        bottom: 18%;
+    }
+    
+    .island {
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 32vw;
+        height: 32vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wave {
+        bottom: -6px;
+    }
+    
+    .wave2 {
+        bottom: -6px;
+    }
+}
+
 /*********** End Image Animations ************/
 
 /*********** Intro slider ************/
@@ -458,7 +612,6 @@ progress::-moz-progress-bar {
 
 .intro-text {
     color: rgb(233, 233, 233);
-    font-family: "Heebo", sans-serif;
     font-size: 3rem;
 }
 
@@ -565,36 +718,6 @@ section {
     display: none;
 }
 
-
-
-@media screen and (max-width:991px) {
-    .main .container {
-        padding: 20px;
-        align-items: center;
-    }
-
-    .main .container::before {
-        width: 100%;
-    }
-
-    .main .container header {
-        padding: 10px 20px;
-    }
-
-    .main .container .content .banner-text div h2 {
-        font-size: 3em;
-    }
-
-    .main .container .content .banner-text {
-        text-align: center;
-    }
-
-     .controls li {
-        width: 60px;
-        height: 60px;
-    }
-}
-
 .main .container header ul {
     position: fixed;
     top: 0;
@@ -654,6 +777,34 @@ section {
     background-position: center;
 }
 
+@media screen and (max-width:991px) {
+    .main .container {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .main .container::before {
+        width: 100%;
+    }
+
+    .main .container header {
+        padding: 10px 20px;
+    }
+
+    .main .container .content .banner-text div h2 {
+        font-size: 3em;
+    }
+
+    .main .container .content .banner-text {
+        text-align: center;
+    }
+
+     .controls li {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 /*********** Section Main Video ************/
 
 /*********** Section Info ************/
@@ -697,6 +848,13 @@ section {
     margin-left: 5vw;
 }
 
+@media screen and (max-width: 991px) {
+    .info .content {
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
 /*********** End Section Info ************/
 
 /*********** Section Card ************/
@@ -711,7 +869,7 @@ section {
     flex-wrap: wrap;
 }
 
-.cocktails__item {
+.cards-item {
     width: calc(66% - 156px);
     margin: 0 78px 200px 78px;
     display: flex;
@@ -719,13 +877,13 @@ section {
     cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE4IiBoZWlnaHQ9IjExOCIgdmlld0JveD0iMCAwIDExOCAxMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05NS44ODk3IDM3LjczNjVDMTAxLjIyMiA0Ni45NzMgMTA5LjI4OSA1Ni42ODMzIDEwMS44MzMgNzIuODkzM0M5NC4zNzU5IDg5LjEwMzMgODguOTI5MyA5MS4wMTYzIDgwLjMwODIgOTUuOTkzOEM1OS45MjIxIDEwNy43NjQgMzMuODQ1OCAxMDAuNzY0IDIyLjA2NTIgODAuMzU5MUM1LjQ1NjQ2IDUxLjU5MiAxNy4yNjA2IDMzLjg3MTcgMzcuNjQ2NiAyMi4xMDE4QzU4LjAzMjcgMTAuMzMxOSA4MC45NTgxIDExLjg3NDMgOTUuODg5NyAzNy43MzY1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03OC45MTggNDcuNTI5M0w3OC44MjE1IDQ3Ljc1NDFDNzguODIxNSA0Ny43NTQxIDYxLjAwMjYgNTEuODU2NSA1Mi4wODU2IDQ2LjY5NThDNTMuMTk4OSA0Ni4wNTMgNTYuNTM4NyA0NC4xMjQ4IDU3LjIwNjcgNDMuNzM5MUM2Mi41Nzg5IDQ4LjA2NzQgNzguOTE4IDQ3LjUyOTMgNzguOTE4IDQ3LjUyOTNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc4LjkzMzYgNDcuNTU4Nkw3OC42OTA3IDQ3LjUyOThDNzguNjkwNyA0Ny41Mjk4IDY2LjIyODUgNjAuOTEwMiA2Ni4yMzkzIDcxLjIxMjlDNjcuMzUyNiA3MC41NzAxIDcwLjY5MjQgNjguNjQxOSA3MS4zNjAzIDY4LjI1NjJDNzAuMjk4MSA2MS40Mzk2IDc4LjkzMzYgNDcuNTU4NiA3OC45MzM2IDQ3LjU1ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc3LjU0ODEgNDcuNjA2OEw3OC40NzExIDQ3LjY2MjlMNzguMTg1OCA0OC43MTEzTDM5LjY5ODkgNzEuNTIwOEwzOC41NTEgNjkuNTMyNkw3Ny41NDgxIDQ3LjYwNjhaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K) 59 59,pointer;
 }
 
-.cocktails__picture {
+.cards-picture {
     height: 0;
     padding-top: 127%;
     position: relative;
 }
 
-.cocktails__picture img, .cocktails__picture picture {
+.cards-picture img, .cards-picture picture {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -736,7 +894,7 @@ section {
     left: 0;
 }
 
-.cocktails__picture img, .cocktails__picture picture {
+.cards-picture img, .cards-picture picture {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -747,7 +905,7 @@ section {
     left: 0;
 }
 
-.cocktails__label {
+.cards-label {
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -761,13 +919,13 @@ section {
     position: relative;
 }
 
-.cocktails__title {
+.cards-title {
     font-size: calc(24px + 18*(100vw - 480px)/1440);
     line-height: 1.19;
     margin-bottom: 2rem;
 }
 
-.cocktails__descr {
+.cards-descr {
     position: relative;
     padding-left: 26px;
     font-weight: 700;
@@ -781,18 +939,32 @@ section {
     text-overflow: ellipsis;
 }
 
-.cocktails__corner-big {
+.cards-corner-big {
     position: absolute;
     left: -12px;
     bottom: -9px;
 }
 
-.cocktails__corner-small {
+.cards-small {
     position: absolute;
     right: -1px;
     bottom: -9px;
 }
 
+@media screen and (max-width: 991px) {
+    .cards {
+        margin: 50px 0 500px 0;
+    }
+
+    .cards-item {
+        width: 80%;
+        margin: 0 auto 200px auto;
+    }
+
+    .container-cards {
+        padding: 100px 0;
+    }
+}
 
 /*********** End Section Card ************/
 
@@ -1058,21 +1230,43 @@ section {
 /*********** Section Contact ************/
 
 .contact .container {
-    /* position: absolute;
-    left: 50%;
-    bottom: 40%;
-    transform: translateX(-50%); */
-    max-width: 700px;
-    min-height: 550px;
+    padding: 1rem calc((100vw - 1300px) / 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+}
+
+.contact .container .contact-text {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 1rem 2rem;
+}
+
+.contact .container .contact-text h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.contact .container .contact-text p {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+    color: #000;
 }
 
 .contact .container .contactForm {
-    padding: 0px 50px;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 2rem;
 }
 
 .contact .container .contactForm h2 {
@@ -1156,6 +1350,14 @@ input.invalid, textarea.invalid {
     text-align: center;
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    /*********** Contact ************/
+    .contact .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+}    
 
 /*********** End Section Contact ************/   
 
@@ -1245,236 +1447,4 @@ input.invalid, textarea.invalid {
     }
 }
 
-/*********** End Animated circles ************/  
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-	#elements .elements-bottom .elements-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
-}
-
-
-@media screen and (max-width: 1400px) {
-    /* .cloud4, .cloud5, .cloud6 {
-        display: none;
-    } */
-
-    /* .sun {
-        position: absolute;
-        width: calc(100% - 100px);
-        height: 1400px;
-        bottom: 25%;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-    /*********** Contact ************/
-    /* .contact .container {
-        width: 90%;
-        min-width: auto;
-        margin: 20px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    }
-
-    .contact .container .contactForm {
-        position: relative;
-        width: calc(100% - 400px);
-        padding-left: 0;
-        margin: 0 auto;
-        padding: 40px;
-        height: 550px;
-    } */
-    /*********** End Contact ************/
-}
-
-@media screen and (max-width: 991px) {
-    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor {
-        display: none;
-    }
-
-    .info .content {
-        font-weight: 700;
-        font-size: 25px;
-    }
-
-    .cards {
-        margin: 50px 0 500px 0;
-    }
-
-    .cocktails__item {
-        width: 80%;
-        margin: 0 auto 200px auto;
-    }
-
-    .container-cards {
-        padding: 100px 0;
-    }
-    /*********** Contact ************/
-    /* .contact .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact .container .contactForm {
-        width: 100%;
-        height: auto;
-    } */
-
-    /*********** End Contact ************/
-
-    .wave {
-        bottom: -10px;
-    }
-    
-    .wave2 {
-        bottom: -10px;
-    }
-    
-    .boat-small {
-        bottom: 40px;
-        left: 15%;
-    }
-    
-    .boat {
-        left: 14.33%;
-        bottom: 10px;
-    }
-    
-    .bird {
-        width: 8.33vw;
-        height: 10.36vw;
-        left: 8.22%;
-        bottom: 8%;
-    }
-    
-    .bird2 {
-        width: 8.33vw;
-        height: 10.36vw;
-        left: 15.22%;
-        bottom: 6%;
-    }
-    
-    .bird3 {
-        width: 12.33vw;
-        height: 10.36vw;
-        right: 13.22%;
-        bottom: 12%;
-    }
-    
-    .bird4 {
-        width: 12.33vw;
-        height: 10.36vw;
-        right: 30.22%;
-        bottom: 10%;
-    }
-    
-    .cloud {
-        left: 12.22%;
-        bottom: 11%;
-        width: 21.71875vw;
-        height: 7.6875vw;
-    }
-    
-    .cloud2 {
-        bottom: 11.5%;
-        left: 20.63%;
-        width: 12.6vw;
-        height: 2.8125vw;
-    }
-    
-    .cloud3 {
-        bottom: 13%;
-        left: 30.63%;
-        width: 16.6vw;
-        height: 4.8125vw;
-    }
-
-    .cloud4 {
-        position: absolute;
-        left: 33.79%;
-        bottom: 32.27%;
-        width: 22.8125vw;
-        height: 4.7vw;
-        z-index: 2;
-    }
-    
-    .cloud5 {
-        position: absolute;
-        left: 22.79%;
-        bottom: 28.27%;
-        width: 22.8125vw;
-        height: 4.7vw;
-    }
-    
-    .cloud6 {
-        position: absolute;
-        bottom: 23.66%;
-        right: 3.072%;
-        width: 25.6vw;
-        height: 5.8125vw;
-    }
-    
-    .cloud-main {
-        left: 0;
-        bottom: -4vw;
-        width: 99vw;
-        height: 9.9vw;
-    }
-    
-    .moon {
-        left: 1vw;
-        top: 2vw;
-        width: 6vw;
-        height: 6vw;
-    }
-
-    .moon2 {
-        right: 4vw;
-        bottom: 19%;
-    }
-    
-    .star {
-        right: 16vw;
-        bottom: 19%;
-    }
-    
-    .star2 {
-        right: 48vw;
-        bottom: 17%;
-    }
-    
-    .star3 {
-        right: 10vw;
-        bottom: 17%;
-    }
-    
-    .star4 {
-        left: 12vw;
-        bottom: 18%;
-    }
-    
-    .island {
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 32vw;
-        height: 32vw;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    /*********** Contact ************/
-    /* .contact .container .contactForm {
-        padding: 25px;
-    } */
-    /*********** End Contact ************/
-
-    .wave {
-        bottom: -6px;
-    }
-    
-    .wave2 {
-        bottom: -6px;
-    }
-}
+/*********** End Animated circles ************/

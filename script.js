@@ -1,3 +1,5 @@
+// See if the counter section is reached
+
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -8,6 +10,10 @@ function isInViewport(el) {
 
     );
 }
+
+// End See if the counter section is reached
+
+// Counter
 
 const counter = document.querySelector('.counter');
 
@@ -39,6 +45,8 @@ document.addEventListener('scroll', function () {
     })
 }});
 
+// End Counter
+
 const header = document.querySelector('header');
 
 document.addEventListener('scroll', () => {
@@ -68,7 +76,9 @@ function prevSlide() {
     slides[index].classList.add('active');
 }
 
-// Toggle menu
+// End Video Slideshow
+
+// Toggle Menu
 
 const toggleMenu = () => {
     const menuIcon = document.querySelector('.menu-icon');
@@ -76,6 +86,8 @@ const toggleMenu = () => {
     menuIcon.classList.toggle('active');
     navbar.classList.toggle('active');
 }
+
+// End Toggle Menu
 
 // Tabs
 const tabcontents = document.querySelectorAll(".tabcontent");
@@ -95,3 +107,4 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.transitionDelay = "0.3s";
 };
 
+// End Tabs
