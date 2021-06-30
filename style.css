@@ -822,7 +822,7 @@ section {
     height: 80px;
     display: initial;
     z-index: 10000;
-    background: url(images/menu.png);
+    background: #fff url(images/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;

@@ -47,19 +47,6 @@ document.addEventListener('scroll', function () {
 
 // End Counter
 
-const menuIcon = document.querySelector('.menu-icon');
-
-document.addEventListener('scroll', () => {
-	var scroll_position = window.scrollY;
-	if (scroll_position > 250) {
-		menuIcon.style.backgroundColor = '#fff';
-        menuIcon.style.borderColor = '#000';
-	} else {
-		menuIcon.style.backgroundColor = 'transparent';
-        menuIcon.style.borderColor = '#fff';
-	}
-});
-
 // Video Slideshow
 
 const slideShow = document.getElementById('slide-show');
