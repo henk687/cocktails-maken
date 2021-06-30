@@ -76,6 +76,8 @@ inputs.forEach((input) => {
     });
 });
 
+// End Form Validation
+
 
 // Send mail
 
@@ -92,3 +94,5 @@ function sendMail(params) {
         console.log("succes", res.status);
     })
 };
+
+// End Send mail

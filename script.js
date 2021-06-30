@@ -18,7 +18,7 @@ function isInViewport(el) {
 const counter = document.querySelector('.counter');
 
 const counters = document.querySelectorAll('.counter');
-const speed = 400; // The lower the slower
+const speed = 400;
 
 document.addEventListener('scroll', function () {
     if (isInViewport(counter)) {
@@ -47,14 +47,16 @@ document.addEventListener('scroll', function () {
 
 // End Counter
 
-const header = document.querySelector('header');
+const menuIcon = document.querySelector('.menu-icon');
 
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
-		header.style.backgroundColor = '#222';
+		menuIcon.style.backgroundColor = '#fff';
+        menuIcon.style.borderColor = '#000';
 	} else {
-		header.style.backgroundColor = 'transparent';
+		menuIcon.style.backgroundColor = 'transparent';
+        menuIcon.style.borderColor = '#fff';
 	}
 });
 
@@ -88,6 +90,18 @@ const toggleMenu = () => {
 }
 
 // End Toggle Menu
+
+// Go to top on refresh
+
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+
+// End Go to top on refresh
 
 // Tabs
 const tabcontents = document.querySelectorAll(".tabcontent");

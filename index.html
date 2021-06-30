@@ -40,26 +40,26 @@
 <!-- Video Slider -->
 
 <section class="main">
-    <div class="header-circle header-circle1">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star1">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle2">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star2">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle3">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star3">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle4">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star4">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle5">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star5">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle6">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star6">
+        <img src="images/star.svg" alt="ster">
     </div>
-    <div class="header-circle header-circle7">
-        <img src="images/star.svg" alt="">
+    <div class="header-star header-star7">
+        <img src="images/star.svg" alt="ster">
     </div>
     <div class="banner-video" id="slide-show">
         <video src="video/video2.mp4" autoplay muted loop class="active"></video>
@@ -68,7 +68,7 @@
     </div>
     <div class="container">
         <header id="navbar">
-            <ul>
+            <ul onclick="toggleMenu();">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#ontstaan">Ontstaan</a></li>
                 <li><a href="#materialen">Materialen</a></li>
@@ -87,12 +87,12 @@
         <div class="parallax-bg">
             <div class="moon">
                 <div class="parallax-trigger">
-                    <img src="images/moon.svg" alt="">
+                    <img src="images/moon.svg" alt="maan">
                 </div>
             </div> 
             <div class="cloud-main">
                 <div class="parallax-trigger">
-                    <img src="images/cloud-section.svg" alt="">
+                    <img src="images/cloud-section.svg" alt="wolk">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
 
     <!-- Info Section -->
 
-    <section class="info">
+    <section class="info" id="ontstaan">
         <div class="container-info">
             <div class="content">
                 <h1>Hoe is de cocktail ontstaan?</h1>
@@ -122,14 +122,24 @@
 
     <!-- End Info Section -->
 
+    <!-- Between -->
+    
+    <div class="between-container">
+        <div class="between-section">
+            <img src="images/between-section-white.svg" alt="stippen">
+        </div>
+    </div>
+
+    <!-- End Between -->
+
     <!-- Cards Section -->
 
-    <section class="cards">
+    <section class="cards" id="materialen">
         <div class="container-cards">
             <div class="cards-item">
                 <div class="cards-picture">
                     <picture>
-                        <img src="images/barmaatje.jpg" alt="">
+                        <img src="images/barmaatje.jpg" alt="barmaatje">
                     </picture>
                 </div>
                 <div class="cards-label">
@@ -140,17 +150,17 @@
                         Met het barmaatje kan je de verhoudingen van de verschillende dranken bij het bereiden van de cocktail precies meten.
                     </div>
                     <div class="cards-corner-big">
-                        <img src="images/label-corner-big.svg" alt="">
+                        <img src="images/label-corner-big.svg">
                     </div>
                     <div class="cards-small">
-                        <img src="images/label-corner-small.svg" alt="">
+                        <img src="images/label-corner-small.svg">
                     </div>
                 </div>
             </div> 
             <div class="cards-item">
                 <div class="cards-picture">
                     <picture>
-                        <img src="images/shaker.jpg" alt="">
+                        <img src="images/shaker.jpg" alt="shaker">
                     </picture>
                 </div>
                 <div class="cards-label">
@@ -161,17 +171,17 @@
                         De shaker is essentieel om de verschillende dranken te mengen. Je hebt twee soorten shakers: de klassieke en de Boston shaker.
                     </div>
                     <div class="cards-corner-big">
-                        <img src="images/label-corner-big.svg" alt="">
+                        <img src="images/label-corner-big.svg">
                     </div>
                     <div class="cards-small">
-                        <img src="images/label-corner-small.svg" alt="">
+                        <img src="images/label-corner-small.svg">
                     </div>
                 </div>
             </div> 
             <div class="cards-item">
                 <div class="cards-picture">
                     <picture>
-                        <img src="images/barzeef.jpg" alt="">
+                        <img src="images/barzeef.jpg" alt="barzeef">
                     </picture>
                 </div>
                 <div class="cards-label">
@@ -182,10 +192,10 @@
                         De barzeef wordt gebruikt om ingrediënten die niet in het glas mogen komen eruit te zeven, zoals ijsblokjes, pitten van het fruit en dergelijke.
                     </div>
                     <div class="cards-corner-big">
-                        <img src="images/label-corner-big.svg" alt="">
+                        <img src="images/label-corner-big.svg">
                     </div>
                     <div class="cards-small">
-                        <img src="images/label-corner-small.svg" alt="">
+                        <img src="images/label-corner-small.svg">
                     </div>
                 </div>
             </div> 
@@ -200,87 +210,87 @@
         <div class="parallax-bg">
             <div class="strainer">
                 <div class="parallax-trigger">
-                    <img class="project-image"  src="images/strainer.svg" alt="">
+                    <img class="from-left"  src="images/strainer.svg" alt="barzeef">
                 </div>
             </div>
             <div class="spoon">
                 <div class="parallax-trigger">
-                    <img class="project-image"  src="images/spoon.svg" alt="">
+                    <img class="from-left"  src="images/spoon.svg" alt="lepel">
                 </div>
             </div>
             <div class="shaker">
                 <div class="parallax-trigger">
-                    <img class="project-image"  src="images/shaker.svg" alt="">
+                    <img class="from-left"  src="images/shaker.svg" alt="shaker">
                 </div>
             </div>
             <div class="lighthouse">
                 <div class="parallax-trigger">
-                    <img class="project-text" src="images/lighthouse.svg" alt="">
+                    <img class="rotate-from-right" src="images/lighthouse.svg" alt="vuurtoren">
                 </div>
             </div>
             <div class="wave">
                 <div class="parallax-trigger">
-                    <img class="fade" src="images/wave.svg" alt="">
+                    <img class="fade" src="images/wave.svg" alt="golven">
                 </div>
             </div>
             <div class="wave2">
                 <div class="parallax-trigger">
-                    <img class="fade" src="images/wave.svg" alt="">
+                    <img class="fade" src="images/wave.svg" alt="golven">
                 </div>
             </div>
             <div class="boat">
                 <div class="parallax-trigger">
-                    <img class="boat-animation"  src="images/boat.svg" alt="">
+                    <img class="boat-animation"  src="images/boat.svg" alt="boot">
                 </div>
             </div>
             <div class="bird">
                 <div class="parallax-trigger">
-                    <img class="project-image"  src="images/bird.svg" alt="">
+                    <img class="from-left"  src="images/bird.svg" alt="vogel">
                 </div>
             </div>
             <div class="bird2">
                 <div class="parallax-trigger">
-                    <img class="project-text"  src="images/bird.svg" alt="">
+                    <img class="rotate-from-right"  src="images/bird.svg" alt="vogel">
                 </div>
             </div>
             <div class="cloud">
                 <div class="parallax-trigger">
-                    <img class="project-image" src="images/cloud-small.svg" alt="">
+                    <img class="from-left" src="images/cloud-small.svg" alt="wolk">
                 </div>
             </div>
             <div class="cloud2">
                 <div class="parallax-trigger">
-                    <img  class="animation-right" src="images/cloud-medium.svg" alt="">
+                    <img  class="from-right" src="images/cloud-medium.svg" alt="wolk">
                 </div>    
             </div>
             <div class="cloud3">
                 <div class="parallax-trigger">
-                    <img  class="animation-right" src="images/cloud-big.svg" alt="">
+                    <img  class="from-right" src="images/cloud-big.svg" alt="wolk">
                 </div>    
             </div>
             <div class="moon2">
                 <div class="parallax-trigger">
-                    <img  class="animation-right" src="images/moon.svg" alt="">
+                    <img  class="from-right" src="images/moon.svg" alt="maan">
                 </div>    
             </div>
             <div class="star">
                 <div class="parallax-trigger">
-                    <img  class="fade" src="images/star.svg" alt="">
+                    <img  class="fade" src="images/star.svg" alt="ster">
                 </div>    
             </div>
             <div class="star2">
                 <div class="parallax-trigger">
-                    <img  class="fade" src="images/star.svg" alt="">
+                    <img  class="fade" src="images/star.svg" alt="ster">
                 </div>    
             </div>
             <div class="star3">
                 <div class="parallax-trigger">
-                    <img  class="fade" src="images/star.svg" alt="">
+                    <img  class="fade" src="images/star.svg" alt="ster">
                 </div>    
             </div>
             <div class="star4">
                 <div class="parallax-trigger">
-                    <img  class="fade" src="images/star.svg" alt="">
+                    <img  class="fade" src="images/star.svg" alt="ster">
                 </div>    
             </div>
         </div>
@@ -334,7 +344,7 @@
                 </ol>
             </div>
             <div class="content-right">
-                <img src="images/maitai.svg" alt="">
+                <img src="images/maitai.svg" alt="mai tai">
             </div>
         </div>
         <div class="tabcontent" id="tab2">
@@ -363,7 +373,7 @@
                 </ol>
             </div>
             <div class="content-right">
-                <img src="images/sexonthebeach.svg" alt="">
+                <img src="images/sexonthebeach.svg" alt="sex on the beach">
             </div>
         </div>
         <div class="tabcontent" id="tab3">
@@ -394,7 +404,7 @@
                 </p>
             </div>
             <div class="content-right">
-                <img src="images/bloodymary.svg" alt="">
+                <img src="images/bloodymary.svg" alt="bloody mary">
             </div>
         </div>
         <div class="tabcontent" id="tab4">
@@ -425,7 +435,7 @@
                 </ol>
             </div>
             <div class="content-right">
-                <img src="images/pinacolada.svg" alt="">
+                <img src="images/pinacolada.svg" alt="pina colada ">
             </div>
         </div>
         <div class="tabcontent" id="tab5">
@@ -454,7 +464,7 @@
                 </ol>        
             </div>
             <div class="content-right">
-                <img src="images/margarita.svg" alt="">
+                <img src="images/margarita.svg" alt="margarita">
             </div>
         </div>
     </div>
@@ -465,10 +475,10 @@
 <!-- Horizontal Slider Section -->
 
 <div class="horizontal-slider">
-    <img src="images/cocktail1.jpg">
-    <img src="images/cocktail2.jpg">
-    <img src="images/cocktail3.jpg">
-    <img src="images/cocktail4.jpg">
+    <img src="images/cocktail1.jpg" alt="cocktail">
+    <img src="images/cocktail2.jpg" alt="cocktail">
+    <img src="images/cocktail3.jpg" alt="cocktail">
+    <img src="images/cocktail4.jpg" alt="cocktail">
 </div>
 
 <!-- End Horizontal Slider Section -->
@@ -516,6 +526,16 @@
 
     <!-- End Counter Section -->
 
+    <!-- Between -->
+
+    <div class="between-container">
+        <div class="between-section">
+            <img src="images/between-section.svg" alt="stippen">
+        </div>
+    </div>
+
+    <!-- End Between -->
+
     <!-- Contact Section -->
 
     <section id="contact" class="contact">
@@ -527,26 +547,26 @@
                 </p>
                 <p>Je kan uiteraard ook contact met ons opnemen voor vragen of opmerkingen</p>
             </div>
-            <div class="contactForm">
-                <div class="formBox">
+            <div class="contact-form">
+                <div class="form-box">
                     <form action="">
                         <h2>Contact</h2>
-                        <div class="inputBox w100">
+                        <div class="input-box">
                             <input type="text" name="name" id="name" placeholder="Naam">
                             <div class="error-hint hidden">Dit veld is verplicht</div>
                         </div>
                     
-                        <div class="inputBox w100">
+                        <div class="input-box">
                             <input type="text" name="email" id="email" placeholder="Email Adres">
                             <div class="error-hint hidden">Email is ongeldig</div>
                         </div>
                     
-                        <div class="inputBox w100">
+                        <div class="input-box">
                             <input type="text" name="phone" id="phone" placeholder="Telefoonnummer">
                             <div class="error-hint hidden">Telefoonnummer is ongeldig</div>
                         </div>
                     
-                        <div class="inputBox w100">
+                        <div class="input-box">
                             <textarea name="message" id="message" placeholder="Schrijf hier je vraag of boodschap"></textarea>
                             <div class="error-hint hidden">Dit veld is verplicht</div>
                         </div>
@@ -581,59 +601,69 @@
 
     <div class="parallax-outer">
         <div class="parallax-bg">
+            <div class="lemon">
+                <div class="parallax-trigger">
+                    <img class="rotate-90" src="images/lemon.svg" alt="citroen">
+                </div>
+            </div>
+            <div class="shell">
+                <div class="parallax-trigger">
+                    <img class="rotate-90" src="images/shell.svg" alt="schelp">
+                </div>
+            </div>
             <div class="cloud4">
                 <div class="parallax-trigger">
-                    <img class="project-image" src="images/cloud-small.svg" alt="">
+                    <img class="from-left" src="images/cloud-small.svg" alt="wolk">
                 </div>
             </div>
             <div class="cloud5">
                 <div class="parallax-trigger">
-                    <img class="animation-right" src="images/cloud-medium.svg" alt="">
+                    <img class="from-right" src="images/cloud-medium.svg" alt="wolk">
                 </div>
             </div>
             <div class="cloud6">
                 <div class="parallax-trigger">
-                    <img class="animation-right" src="images/cloud-big1.svg" alt="">
+                    <img class="from-right" src="images/cloud-big1.svg" alt="wolk">
                 </div>
             </div>
             <div class="sun">
                 <div class="parallax-trigger">
-                    <img class="sun-animation" src="images/sun.svg" alt="">
+                    <img class="rotate-180" src="images/sun.svg" alt="zon">
                 </div>
             </div>
             <div class="island">
                 <div class="parallax-trigger">
-                    <img class="island-animation" src="images/island.svg" alt="">
+                    <img class="island-animation" src="images/island.svg" alt="eiland">
                 </div>    
             </div>
             <div class="anchor">
                 <div class="parallax-trigger">
-                    <img class="anchor-animation" src="images/anchor.svg" alt="">
+                    <img class="anchor-animation" src="images/anchor.svg" alt="anker">
                 </div>    
             </div>
             <div class="dolphin">
                 <div class="parallax-trigger">
-                    <img class="dolphin-animation" src="images/dolphin.svg" alt="">
+                    <img class="dolphin-animation" src="images/dolphin.svg" alt="dolfijn">
                 </div>    
             </div>
             <div class="dolphin2">
                 <div class="parallax-trigger">
-                    <img class="dolphin2-animation" src="images/dolphin2.svg" alt="">
+                    <img class="dolphin2-animation" src="images/dolphin2.svg" alt="dolfijn">
                 </div>    
             </div>
             <div class="boat-small">
                 <div class="parallax-trigger">
-                    <img class="island-animation" src="images/boat-small.svg" alt="">
+                    <img class="island-animation" src="images/boat-small.svg" alt="boot">
                 </div>
             </div>
             <div class="bird3">
                 <div class="parallax-trigger">
-                    <img class="project-image"  src="images/bird-black.svg" alt="">
+                    <img class="from-left"  src="images/bird-black.svg" alt="vogel">
                 </div>
             </div>
             <div class="bird4">
                 <div class="parallax-trigger">
-                    <img class="project-text"  src="images/bird-black.svg" alt="">
+                    <img class="rotate-from-right"  src="images/bird-black.svg" alt="vogel">
                 </div>
             </div>
         </div>

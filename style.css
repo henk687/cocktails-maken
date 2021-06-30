@@ -12,6 +12,45 @@ html {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+/*********** Between Sections ************/
+
+.between-container {
+    max-width: 1040px;
+    width: 100%;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.between-section {
+    margin-top: 64px;
+    width: 100%;
+    height: 0;
+    padding-top: 1.35%;
+    position: relative;
+}
+
+.between-section img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 1400px) {
+	.between-container {
+        margin: 50px auto;
+    }
+}
+
+/*********** End Between Sections ************/
+
 /*********** Horizontal slider ************/
 
 .horizontal-slider {
@@ -270,6 +309,22 @@ progress::-moz-progress-bar {
     left: 10%;
 }
 
+.lemon {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 23%;
+    right: 3%;
+}
+
+.shell {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 15%;
+    left: 3%;
+}
+
 .cloud {
     position: absolute;
     left: 12.22%;
@@ -430,7 +485,7 @@ progress::-moz-progress-bar {
 }
 
 @media screen and (max-width: 991px) {
-    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor {
+    .spoon, .strainer, .shaker, .dolphin, .dolphin2, .anchor, .shell, .lemon {
         display: none;
     }
 
@@ -479,6 +534,13 @@ progress::-moz-progress-bar {
         right: 30.22%;
         bottom: 10%;
     }
+
+    .sun {
+        width: 30vw;
+        height: 30vw;
+        bottom: 27%;
+        left: 10%;
+    }
     
     .cloud {
         left: 12.22%;
@@ -504,7 +566,7 @@ progress::-moz-progress-bar {
     .cloud4 {
         position: absolute;
         left: 33.79%;
-        bottom: 32.27%;
+        bottom: 24.27%;
         width: 22.8125vw;
         height: 4.7vw;
         z-index: 2;
@@ -513,14 +575,14 @@ progress::-moz-progress-bar {
     .cloud5 {
         position: absolute;
         left: 22.79%;
-        bottom: 28.27%;
+        bottom: 22.27%;
         width: 22.8125vw;
         height: 4.7vw;
     }
     
     .cloud6 {
         position: absolute;
-        bottom: 23.66%;
+        bottom: 17.66%;
         right: 3.072%;
         width: 25.6vw;
         height: 5.8125vw;
@@ -760,7 +822,7 @@ section {
     height: 80px;
     display: initial;
     z-index: 10000;
-    background: #fff url(images/menu.png);
+    background: url(images/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -874,7 +936,6 @@ section {
     margin: 0 78px 200px 78px;
     display: flex;
     flex-direction: column;
-    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE4IiBoZWlnaHQ9IjExOCIgdmlld0JveD0iMCAwIDExOCAxMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05NS44ODk3IDM3LjczNjVDMTAxLjIyMiA0Ni45NzMgMTA5LjI4OSA1Ni42ODMzIDEwMS44MzMgNzIuODkzM0M5NC4zNzU5IDg5LjEwMzMgODguOTI5MyA5MS4wMTYzIDgwLjMwODIgOTUuOTkzOEM1OS45MjIxIDEwNy43NjQgMzMuODQ1OCAxMDAuNzY0IDIyLjA2NTIgODAuMzU5MUM1LjQ1NjQ2IDUxLjU5MiAxNy4yNjA2IDMzLjg3MTcgMzcuNjQ2NiAyMi4xMDE4QzU4LjAzMjcgMTAuMzMxOSA4MC45NTgxIDExLjg3NDMgOTUuODg5NyAzNy43MzY1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03OC45MTggNDcuNTI5M0w3OC44MjE1IDQ3Ljc1NDFDNzguODIxNSA0Ny43NTQxIDYxLjAwMjYgNTEuODU2NSA1Mi4wODU2IDQ2LjY5NThDNTMuMTk4OSA0Ni4wNTMgNTYuNTM4NyA0NC4xMjQ4IDU3LjIwNjcgNDMuNzM5MUM2Mi41Nzg5IDQ4LjA2NzQgNzguOTE4IDQ3LjUyOTMgNzguOTE4IDQ3LjUyOTNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc4LjkzMzYgNDcuNTU4Nkw3OC42OTA3IDQ3LjUyOThDNzguNjkwNyA0Ny41Mjk4IDY2LjIyODUgNjAuOTEwMiA2Ni4yMzkzIDcxLjIxMjlDNjcuMzUyNiA3MC41NzAxIDcwLjY5MjQgNjguNjQxOSA3MS4zNjAzIDY4LjI1NjJDNzAuMjk4MSA2MS40Mzk2IDc4LjkzMzYgNDcuNTU4NiA3OC45MzM2IDQ3LjU1ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc3LjU0ODEgNDcuNjA2OEw3OC40NzExIDQ3LjY2MjlMNzguMTg1OCA0OC43MTEzTDM5LjY5ODkgNzEuNTIwOEwzOC41NTEgNjkuNTMyNkw3Ny41NDgxIDQ3LjYwNjhaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K) 59 59,pointer;
 }
 
 .cards-picture {
@@ -1260,7 +1321,7 @@ section {
     color: #000;
 }
 
-.contact .container .contactForm {
+.contact .container .contact-form {
     display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -1269,14 +1330,14 @@ section {
     padding: 1rem 2rem;
 }
 
-.contact .container .contactForm h2 {
+.contact .container .contact-form h2 {
     color: #000;
     font-size: 34px;
     font-weight: 500;
     
 }
 
-.contact .container .contactForm .formBox {
+.contact .container .contact-form .form-box {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1284,14 +1345,14 @@ section {
     padding-top: 30px;
 }
 
-.contact .container .contactForm .formBox form .inputBox {
+.contact .container .contact-form .form-box form .input-box {
     position: relative;
     margin-bottom: 35px;
     width: 100%;
 }
 
-.contact .container .contactForm .formBox form .inputBox input,
-.contact .container .contactForm .formBox form .inputBox textarea {
+.contact .container .contact-form .form-box form .input-box input,
+.contact .container .contact-form .form-box form .input-box textarea {
     width: 100%;
     resize: none;
     padding: 5px 0;
@@ -1304,11 +1365,11 @@ section {
     border-bottom: 1px solid #000;
 }
 
-.contact .container .contactForm .formBox form .inputBox textarea {
+.contact .container .contact-form .form-box form .input-box textarea {
     height: 120px;
 }
 
-.contact .container .contactForm .formBox form button {
+.contact .container .contact-form .form-box form button {
     position: relative;
     cursor: pointer;
     background: #000;
@@ -1319,7 +1380,7 @@ section {
     font-size: 25px;
 }
 
-.contact .container .contactForm .formBox form button:hover {
+.contact .container .contact-form .form-box form button:hover {
     background: rgb(127, 255, 212, 1);
     color: #333;
 }
@@ -1363,7 +1424,7 @@ input.invalid, textarea.invalid {
 
 /*********** Animated circles ************/
 
-.header-circle {
+.header-star {
     position: absolute;
     border-radius: 50%;
     width: 4em;
@@ -1372,76 +1433,76 @@ input.invalid, textarea.invalid {
     
 }
 
-.header-circle1 {
+.header-star1 {
     bottom: 25%;
     left: 5%;
-    -webkit-animation: circle-size 9s linear infinite alternate;
-    animation: circle-size 9s linear infinite alternate;
+    -webkit-animation: star-size 9s linear infinite alternate;
+    animation: star-size 9s linear infinite alternate;
 }
 
-.header-circle2 {
+.header-star2 {
     top: 50%;
     left: 15%;
-    -webkit-animation: circle-move 9s linear infinite alternate;
-    animation: circle-move 9s linear infinite alternate;
+    -webkit-animation: star-move 9s linear infinite alternate;
+    animation: star-move 9s linear infinite alternate;
 }
 
-.header-circle3 {
+.header-star3 {
     right: 9%;
     bottom: 7%;
-    -webkit-animation: circle-size 6s linear infinite alternate;
-    animation: circle-size 6s linear infinite alternate;
+    -webkit-animation: star-size 6s linear infinite alternate;
+    animation: star-size 6s linear infinite alternate;
 }
 
-.header-circle4 {
+.header-star4 {
     top: 50%;
     right: 35%;
-    -webkit-animation: circle-move 6s linear infinite alternate;
-    animation: circle-move 6s linear infinite alternate;
+    -webkit-animation: star-move 6s linear infinite alternate;
+    animation: star-move 6s linear infinite alternate;
 }
 
-.header-circle5 {
+.header-star5 {
     top: 5%;
-    -webkit-animation: circle-size 6s linear infinite alternate;
-    animation: circle-size 6s linear infinite alternate;
+    -webkit-animation: star-size 6s linear infinite alternate;
+    animation: star-size 6s linear infinite alternate;
     left: 35%;
 }
 
-.header-circle6 {
-    -webkit-animation: circle-size 8s linear infinite alternate;
-    animation: circle-size 8s linear infinite alternate;
+.header-star6 {
+    -webkit-animation: star-size 8s linear infinite alternate;
+    animation: star-size 8s linear infinite alternate;
     top: 35%;
     right: 15%;
 }
 
-.header-circle7 {
-    -webkit-animation: circle-size 8s linear infinite alternate;
-    animation: circle-size 8s linear infinite alternate;
+.header-star7 {
+    -webkit-animation: star-size 8s linear infinite alternate;
+    animation: star-size 8s linear infinite alternate;
     left: 50%;
     bottom: 15%;
 }
 
-@-webkit-keyframes circle-size {
+@-webkit-keyframes star-size {
     to {
         -webkit-transform: scale(0.5);
                 transform: scale(0.5);
     }
 }
 
-@keyframes circle-size {
+@keyframes star-size {
     to {
         -webkit-transform: scale(0.5);
                 transform: scale(0.5);
     }
 }
 
-@-webkit-keyframes circle-move {
+@-webkit-keyframes star-move {
     to {
         top: 6%;
     }
 }
 
-@keyframes circle-move {
+@keyframes star-move {
     to {
         top: 6%;
     }
